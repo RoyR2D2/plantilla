@@ -1,0 +1,55 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+}
+
+/* DIV CONTENEDOR GENERAL */
+#wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#cabezera{
+	height: 150px;
+	background: #FFE680;
+	background-image: url(/images/montaña.jpg);
+	background-size: 100%;
+	background-repeat: repeat-x;
+}
+#cabezera img{
+	height: 150px;
+	width: 150px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+    background-color: grey; 
+    overflow: auto;
+}
+
+#content {
+    /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
+	width: 790px;
+	float: left;
+    background-color: grey;
+    padding: 10px;   
+}
+
+#sideRight {
+	float: left;
+	width: 150px;	
+	background: #FFACAA;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#pie {
+    float: left;
+	clear: left;
+	height: 60px;
+	background: #BFF08E;
+}
+
