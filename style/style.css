@@ -11,15 +11,19 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 #cabezera{
-	height: 150px;
+	height: 400px;
+	width: 100%;
 	background: #FFE680;
 	background-image: url(/images/montaña.jpg);
 	background-size: 100%;
 	background-repeat: repeat-x;
 }
 #cabezera img{
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	padding: 40px 0;
 }
 
 /* Middle
@@ -34,7 +38,7 @@ body {
     /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
 	width: 790px;
 	float: left;
-    background-color: grey;
+    background-color: rgb(65, 61, 61);
     padding: 10px;   
 }
 
@@ -48,8 +52,16 @@ body {
 -----------------------------------------------------------------------------*/
 #pie {
     float: left;
-	clear: left;
-	height: 60px;
-	background: #BFF08E;
-
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	color: aliceblue;
+}
+.lista1, .lista2, .lista3 {
+	display: inline-block;
+	padding: 0 10pxs;
+}
+#pie h3 {
+	display: inline-block;
+}
 
