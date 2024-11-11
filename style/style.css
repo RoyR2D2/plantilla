@@ -44,24 +44,73 @@ body {
 
 #sideRight {
 	float: left;
-	width: 150px;	
+	width: 50%;	
 	background: #FFACAA;
 }
-
+.sidebar img {
+	height: 100px;
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+}
+#verde {
+	color: greenyellow;
+}
+#muyVerde {
+ color: green;
+}
+#naranja {
+ color: orange;
+}
+#rojo {
+ color: red;
+}
+#amarillo {
+	color: #FFE680;
+}
 /* Footer
 -----------------------------------------------------------------------------*/
 #pie {
     float: left;
 	width: 100%;
 	height: 100%;
-	background: #000000;
+	background: #3b3a3a;
 	color: aliceblue;
 }
-.lista1, .lista2, .lista3 {
-	display: inline-block;
-	padding: 0 10pxs;
+#pie a{
+	color: white;
+	text-decoration: none;
 }
-#pie h3 {
-	display: inline-block;
+.icon-twitter {
+	font-size: 15px;
+}
+.icon-facebook {
+	font-size: 15px;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: relative;
+}
+div #copy {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.footer-section {
+	/* Agrupa cada h3 con su lista */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* Alinea los elementos al principio */
+}
+
+.footer-section h3 {
+	margin-bottom: 5px; /* Espacio entre el h3 y la lista */
+	text-decoration: underline;
+}
+
+.footer-section ul {
+	padding: 0; /* Quita el padding por defecto */
+}
