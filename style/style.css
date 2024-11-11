@@ -38,26 +38,61 @@ body {
     /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
 	width: 100%;
 	float: left;
-    background-color: rgb(65, 61, 61);
+    background-color: grey;
     padding: 10px;   
 }
 
 #sideRight {
-	float: left;
+	float: right;
 	width: 25%;	
-	background: #FFACAA;
+	background-color: grey;
 }
-.sidebar img {
+#sideRight h2, p {
+	text-decoration: underline;
+}
+#calificacion_caras {
 	height: 100px;
-	width: 100px;
+	width: 200px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;	
 }
+.estrellas {
+	height: 50px;
+	width: 190px;
+  }
+  
+  /* Estilos de calificación con estrellas */
+  .star-rating {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+	flex-direction: row-reverse; 
+	margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .star-rating input {
+	display: none;
+  }
+  
+  .star-rating label {
+	font-size: 3em;
+	color: rgb(255, 254, 254);
+	cursor: pointer;
+  }
+  
+  .star-rating input:checked ~ label,
+  .star-rating input:hover ~ label {
+	color: gold;
+  }
+  
+  .star-rating input:hover + label { 
+	color: gold; 
+  }
 #verde {
 	color: greenyellow;
 }
 #muyVerde {
- color: green;
+ color: rgb(73, 196, 73);
 }
 #naranja {
  color: orange;
