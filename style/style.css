@@ -47,7 +47,17 @@ body {
 	height: 300px;
 	width: 600px;
 }
-
+#Fotos {
+	display: grid;
+	grid-template-columns: repeat(3, 10fr); /* Crea 3 columnas con igual ancho */
+	grid-gap: 5px; /* Espacio entre las imágenes */
+  }
+  
+#Fotos img {
+	width: 100%;
+	height: 300px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+ }
 #sideRight {
 	float: right;
 	width: 20%;	
