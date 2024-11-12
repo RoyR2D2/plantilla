@@ -32,6 +32,7 @@ body {
 	width: 100%;
     background-color: grey; 
     overflow: auto;
+	height: 100%;
 }
 
 #content {
@@ -40,7 +41,11 @@ body {
 	float: left;
     background-color: grey;
     padding: 10px;
-	
+	height: 100%;
+}
+#content img {
+	height: 300px;
+	width: 600px;
 }
 
 #sideRight {
