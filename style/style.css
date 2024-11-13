@@ -58,6 +58,18 @@ body {
 	height: 300px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
  }
+#video{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con igual ancho */
+	grid-gap: 5px; /* Espacio entre los videos */
+  }
+  
+  #video video {
+	width: 100%;
+	height: auto; 
+	border: 1px solid #ddd; /* Borde opcional */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  }
 #sideRight {
 	float: right;
 	width: 20%;	
