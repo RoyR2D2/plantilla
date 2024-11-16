@@ -70,6 +70,62 @@ body {
 	border: 1px solid #ddd; /* Borde opcional */
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
   }
+  table {
+    width: 100%;
+	height: 100%;
+    border-collapse: collapse;
+	display: block;
+    font-family: sans-serif;
+	font-size: medium;
+  }
+
+
+th, td {
+	width: 30%;
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+	color: rgb(248, 248, 248);
+	font-style: bold;
+}
+td a {
+	text-decoration: none;
+	color: rgb(248, 247, 248);
+	transition: 0.3 ease;
+}
+td a:hover {
+	text-decoration: underline;
+	background-color: #3b3a3a;
+	color: orange;
+	font-size: 20px;
+}	
+td img {
+	transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  td img:hover {
+	transform: scale(1.5); /* Aumenta el tamaño de la imagen al 120% */
+	/* Puedes ajustar el valor de scale() para controlar el nivel de zoom */
+  }
+th {
+    background-color: #2211b9;
+}
+
+/* Estilos para las filas impares */
+tr:nth-child(odd) {
+    background-color: #0aacd4;
+}
+
+/* Estilos para las estaciones de esquí */
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(6) td:nth-child(1),
+tr:nth-child(8) td:nth-child(1),
+tr:nth-child(11) td:nth-child(1),
+tr:nth-child(14) td:nth-child(1) {
+    background-color: #1c90d3; /* Color de fondo para las celdas de la estación */
+    font-weight: bold; /* Texto en negrita */
+}
 #sideRight {
 	float: right;
 	width: 20%;	
