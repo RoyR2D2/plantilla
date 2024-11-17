@@ -50,33 +50,56 @@
 			<div id="middle">
 				<!--Panel izquierda --> 
 				<div id="content">
-					<h1><strong>Aramon</strong></h1>
-					<br>
-					<p>Somos Aramon, la empresa que te acerca a la pasión por la nieve y la montaña en Aragón. y tan solo con estas cosas podras venir a disfrutar con nosotros.</p>
-					<ol>
-						<li><mark>Esquís con fijaciones</mark></li>
-						<li><mark>Botas de esqui</mark></li>
-						<li><mark>Bastones</mark></li>
-						<li><mark>Ropa de esqu</mark></li>
-						<li><mark><em>Muchas ganas de disfurtar</em></mark></li>
-					</ol>
-					<h2>Nuestras pistas estan ubicadas en:</h2>
-					<ul>
-						<li><mark>Formigal-Panticosa poner un style image</mark></p></li>
-						<ul>
-							<li><img src="/images/formigal-panticosa-9.jpg"></li>
-						</ul>
-						<li><p>Candanchú</p></li>
-						<ul>
-							<img src="/images/Estación-de-Candanchú-Huesca-6.jpg">
-						</ul>
-						<li><p>La molina</p></li>
-						<img src="/images/La molina.jfif">
-						<li><p>Sierra Nevada</p></li>
-						<img src="/images/Sierra-Nevada-min.jpg">
-						<li><p>San Isidro</p></li>
-						<img src="/images/San isidor.jpg">
-					</ul>
+					<div id="Consulta">
+						<form action="/enviar_consulta" method="post"> 
+						  <label class="etiqueta" for="nombre">Nombre completo*</label><br>
+						  <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="Por favor, introduce solo letras." placeholder="Introduce tu nombre"><br>
+					  
+						  <label class="etiqueta" for="apellidos">Apellidos*</label><br>
+						  <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-z\s]+" title="Por favor, introduce solo letras." placeholder="Introduce tus apellidos"><br>
+					  
+						  <label class="etiqueta" for="email">Correo electronico*</label><br>
+						  <input type="email" id="email" name="email" required title="Por favor, introduce un correo electrónico válido." placeholder="ejemplo@email.com"><br>
+					  
+						  <label class="etiqueta" for="dni">DNI*</label><br>
+						  <input type="text" id="dni" name="dni" required maxlength="9" pattern="[0-9]{8}[A-Za-z]" title="Por favor, introduce un DNI válido (8 números y una letra)." placeholder="12345678A"><br>
+					  
+						  <label class="etiqueta" for="telefono">telefono</label><br>
+						  <input type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" title="Por favor, introduce un número de teléfono válido de 9 dígitos." placeholder="123456789"><br>
+					  
+						  <label class="etiqueta">Género</label><br>
+						  <input type="radio" id="hombre" name="genero" value="hombre">
+						  <label for="hombre">Hombre</label>
+					  
+						  <input type="radio" id="mujer" name="genero" value="mujer">
+						  <label for="mujer">Mujer</label>
+					  
+						  <input type="radio" id="otro" name="genero" value="otro">
+						  <label for="otro">Otro</label><br>
+					  
+						  <label class="etiqueta" for="informacion">Información adicional</label><br>
+						  <textarea id="informacion" name="informacion" placeholder="Escribe aquí información adicional"></textarea><br>
+					  
+						  <label class="etiqueta" for="pista">Pista a la que ha asistido el cliente*</label><br>
+						  <select id="pista" name="pista" required>
+							<option value="">Selecciona una pista</option>
+							<option value="Formigal-Panticosa">Formigal-Panticosa</option>
+							<option value="Candanchú">Candanchú</option>
+							<option value="La Molina">La Molina</option>
+							<option value="Sierra Nevada">Sierra Nevada</option>
+							<option value="San Isidro">San Isidro</option>
+						  </select><br>
+					  
+						  <label class="etiqueta" for="fecha">Fecha en la que asistio:</label><br>
+						  <input type="date" id="fecha" name="fecha"><br>
+					  
+						  <label class="etiqueta" for="color">Dificualtad de las pistas</label><br>
+						  <input type="color" id="color" name="color"><br>
+					  
+						  <button type="submit">Enviar</button> 
+						  <button type="reset">resetear</button>
+						</form>
+					</div>
 				</div>
 			<!-- #middle-->
 			</div>

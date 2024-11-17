@@ -126,6 +126,20 @@ tr:nth-child(14) td:nth-child(1) {
     background-color: #1c90d3; /* Color de fondo para las celdas de la estación */
     font-weight: bold; /* Texto en negrita */
 }
+#Consulta label {
+	font-size: 13px;
+	font-weight: bold;
+}
+.etiqueta {
+	text-decoration: underline solid coral;
+}
+#Consulta input[type="radio"] {
+	display: inline-block;
+	margin-right: 5px;
+  }
+#Consulta input {
+	margin: 5px;
+}
 #sideRight {
 	float: right;
 	width: 20%;	
