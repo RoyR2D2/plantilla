@@ -42,10 +42,26 @@ body {
     background-color: grey;
     padding: 10px;
 	height: 100%;
+
 }
-#content img {
+#hero img{
+	height: 250px;
+	padding: 25px;
+	transition: 0.3s ease;
+}
+#hero img:hover{
+	transform: scale(1.3);
+}
+#estaciones img {
 	height: 300px;
-	width: 600px;
+	width: 300px;
+	transition: 0.3s ease;
+}
+#estaciones img:hover {
+	transform: scale(1.3);
+}
+main, nav {
+	font-size: large;
 }
 #Fotos {
 	display: grid;
@@ -147,7 +163,7 @@ tr:nth-child(14) td:nth-child(1) {
 	border-left: 1px solid white;
 	height: 100%;
 }
-#sideRight h2, p {
+#sideRight p {
 	text-decoration: underline;
 }
 #calificacion_caras {
