@@ -39,7 +39,6 @@
 						</ul>
 					  </li>
 					  <li><a href='/Tarifas.html'>Tarifas</a></li>
-					  <li><a href='/Reserva.html'>Reserva</a></li>
 					  <li><a href='/Contacto.html'>Contacto</a></li>
 					  <li><a href='/Pistas.html'>Pistas</a></li>
 					  <li><a href='/Novedades.html'>Novedades</a></li>
@@ -113,12 +112,22 @@
 						</section>
 						
 						<section id="galeria">
-						<h2>Galería</h2>
-						<div class="galeria">
-							<img src="images/formigal-panticosa-1.jpg" alt="Imagen 1 de Formigal-Panticosa">
-							<img src="images/formigal-panticosa-2.jpg" alt="Imagen 2 de Formigal-Panticosa">
-							<img src="images/formigal-panticosa-3.jpg" alt="Imagen 3 de Formigal-Panticosa">
-						</div>
+							<h2>Galería</h2>
+							<div class="carousel">
+								<div class="slides">
+								  <div class="slide active">
+									<img src="/images/Mapa-pistas.jpg" alt="Imagen 1">
+								  </div>
+								  <div class="slide">
+									<img src="/images/FORMIGAL-destacad.jpg" alt="Imagen 2">
+								  </div>
+								  <div class="slide">
+									<img src="/images/3.jpeg" alt="Imagen 3">
+								  </div>
+								</div>
+								<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+								<button class="next" onclick="changeSlide(1)">&#10095;</button>
+							  </div> 
 						</section>
 
 					</main>

@@ -39,7 +39,6 @@
 						</ul>
 					  </li>
 					  <li><a href='/Tarifas.html'>Tarifas</a></li>
-					  <li><a href='/Reserva.html'>Reserva</a></li>
 					  <li><a href='Contacto.html'>Contacto</a></li>
 					  <li><a href='Pistas.html'>Pistas</a></li>
 					  <li><a href='/Novedades.html'>Novedades</a></li>
@@ -49,35 +48,85 @@
 			<!-- Div central -->		
 			<div id="middle">
 				<!--Panel izquierda --> 
-				<div id="content">
-					<h1><strong>Aramon</strong></h1>
-					<br>
-					<p>Somos Aramon, la empresa que te acerca a la pasión por la nieve y la montaña en Aragón. y tan solo con estas cosas podras venir a disfrutar con nosotros.</p>
-					<ol>
-						<li><mark>Esquís con fijaciones</mark></li>
-						<li><mark>Botas de esqui</mark></li>
-						<li><mark>Bastones</mark></li>
-						<li><mark>Ropa de esqu</mark></li>
-						<li><mark><em>Muchas ganas de disfurtar</em></mark></li>
-					</ol>
-					<h2>Nuestras pistas estan ubicadas en:</h2>
-					<ul>
-						<li><mark>Formigal-Panticosa poner un style image</mark></p></li>
+				<h1>San Isidro</h1>
+				<nav>
+					<a href="#descripcion">Descripción</a>
+					<a href="#pistas">Pistas</a>
+					<a href="#servicios">Servicios</a>
+					<a href="#galeria">Galería</a>
+				</nav>
+			
+				<main>
+					<section id="descripcion">
+						<h2>Descripción</h2>
+						<p>San Isidro es una estación de esquí familiar ubicada en la Cordillera Cantábrica, en León. Con 31 km esquiables, ofrece una experiencia agradable para esquiadores de todos los niveles, en un entorno natural de gran belleza.</p>
+					</section>
+			
+					<section id="pistas">
+						<h2>Pistas</h2>
+						<table>
+							<thead>
+							<tr>
+								<th>Nivel</th>
+								<th>Número de pistas</th>
+								<th>Kilómetros</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Verdes (principiantes)</td>
+								<td>5</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>Azules (fáciles)</td>
+								<td>11</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>Rojas (intermedias)</td>
+								<td>11</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>Negras (difíciles)</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+			
+					<section id="servicios">
+						<h2>Servicios</h2>
 						<ul>
-							<li><img src="/images/formigal-panticosa-9.jpg"></li>
+							<li>15 remontes</li>
+							<li>Escuelas de esquí y snowboard</li>
+							<li>Alquiler de material</li>
+							<li>Restaurantes y cafeterías</li>
+							<li>Snowpark</li>
+							<li>Circuito de esquí de fondo</li>
 						</ul>
-						<li><p>Candanchú</p></li>
-						<ul>
-							<img src="/images/Estación-de-Candanchú-Huesca-6.jpg">
-						</ul>
-						<li><p>La molina</p></li>
-						<img src="/images/La molina.jfif">
-						<li><p>Sierra Nevada</p></li>
-						<img src="/images/Sierra-Nevada-min.jpg">
-						<li><p>San Isidro</p></li>
-						<img src="/images/San isidor.jpg">
-					</ul>
-				</div>
+					</section>
+					<section id="galeria">
+						<h2>Galería</h2>
+						<div class="carousel">
+							<div class="slides">
+							  <div class="slide active">
+								<img src="/images/canto-de-sirenas-pico-torres-valmartrn3.jpg" alt="Imagen 1">
+							  </div>
+							  <div class="slide">
+								<img src="/images/5.jpg" alt="Imagen 2">
+							  </div>
+							  <div class="slide">
+								<img src="/images/5.3.jpg" alt="Imagen 3">
+							  </div>
+							</div>
+							<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+							<button class="next" onclick="changeSlide(1)">&#10095;</button>
+						  </div> 
+					</section>
+				</main>
 			<!-- #middle-->
 			</div>
 			<div id="pie">
