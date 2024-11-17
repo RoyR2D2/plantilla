@@ -40,8 +40,7 @@
 					  </li>
 					  <li><a href='/Tarifas.html'>Tarifas</a></li>
 					  <li><a href='Contacto.html'>Contacto</a></li>
-					  <li><a href='Pistas.html'>Pistas</a></li>
-					  <li><a href='/Novedades.html'>Novedades</a></li>
+					  <li><a href='Pistas.html'>Forfait</a></li>
 					</ul>
 				  </nav>
 			</div>	
@@ -64,33 +63,13 @@
 						
 				<!--Panel de la derecha -->
 				<div class="sidebar" id="sideRight">
-					<h2><mark>Dificualtad de las pistas</mark></h2>
-						<img id="calificacion_caras" src="/images/escala-eva-blog.jpeg">
-						<ul>
-							<li id="verde">Formigal</li>
-							<li id="muyVerde">Candanchú</li>
-							<li id="naranja">La molina</li>
-							<li id="rojo">Sierra Nevada</li>
-							<li id="amarillo">San Isidro</li>
-						</ul>
-						<hr>
-					<h2><mark> Opiniones de los clientes</mark></h2>
-						<p>Marta: Una experiencia increible</p>
-						<br>
-						<img src="/images/5estrellas-Photoroom.png" class="estrellas">
-						<p>Pepe: Fui con familia a las pistas de Cancanchu y nos lo pasamos en grande un gran trato por parte de la organizacion </p>
-						<img src="/images/4estrellas-Photoroom.png" class="estrellas">
-						<p>Nere:Unas pistas muy cuidadas perfectas para usuarios mas profesionales pero faltaria algo mas de señalizacion</p>
-						<img src="/images/3.5estrllas.png" class="estrellas">
-						<hr>
-						<h2><mark>¡Danos tu opinión!</mark></h2>
-						<div class="star-rating"> 
-							<input type="radio" id="star5" name="rating" value="5"> <label for="star5">★</label>
-							<input type="radio" id="star4" name="rating" value="4"> <label for="star4">★</label>
-							<input type="radio" id="star3" name="rating" value="3"> <label for="star3">★</label>
-							<input type="radio" id="star2" name="rating" value="2"> <label for="star2">★</label>
-							<input type="radio" id="star1" name="rating" value="1"> <label for="star1">★</label>
-						</div>
+					<h3>Sube tu archivo</h3>
+					<form action="/upload" method="post" enctype="multipart/form-data">
+					  <label for="archivo">Seleccionar archivo:</label>
+					  <input type="file" id="archivo" name="archivo">   
+				  
+					  <button type="submit">Subir</button>
+					</form>
 				</div>
 						<!--.sidebar#sideRight -->
 			<!-- #middle-->
